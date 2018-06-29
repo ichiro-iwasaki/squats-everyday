@@ -10,6 +10,7 @@ class LogsController < ApplicationController
 
   def create
     Log.create(log_params)
+    redirect_to :root
   end
 
   private

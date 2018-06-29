@@ -1,3 +1,9 @@
 <% @logs.each do |log| %>
+  <%= log.created_at.strftime("%m/%d") %>
+  </br>
   <%= log.number  %>
+  </br>
+
 <% end %>
+
+<%= link_to "スクワットの回数を入力する", logs_path %>
