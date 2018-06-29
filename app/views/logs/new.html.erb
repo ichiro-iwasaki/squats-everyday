@@ -1,1 +1,11 @@
-ログですよ〜。
+<div>
+  今日やったスクワットは何回ですか？
+</div>
+
+<%= form_for(@log) do |f| %>
+
+  <%= f.label :number, "回数を入力" %>
+  <%= f.number_field :number, class: 'form-control' %>
+  <%= f.submit "保存", class: "btn btn-primary" %>
+
+<% end %>
