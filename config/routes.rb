@@ -1,3 +1,3 @@
 Rails.application.routes.draw do
-  get 'logs/new'
+  root 'logs/new'
 end
