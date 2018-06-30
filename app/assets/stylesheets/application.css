@@ -13,3 +13,83 @@
  *= require_tree .
  *= require_self
  */
+
+ /*
+ *= require font-awesome
+ */
+
+body{
+  background: #efefef;
+  margin: 0;
+}
+
+a:-webkit-any-link {
+  color: #000;
+}
+
+.fa{
+  margin-right: 20px;
+  color: #fff;
+  font-size: 140px;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #000055;
+  box-shadow: 0 0.5px 3px 2px rgba(0,0,0,0.5);
+}
+
+.header-logo{
+  margin-left: 20px;
+  font-weight: bold;
+  font-size: 30px;
+  font-family: 'Impact';
+  color: #fff;
+}
+
+.wrapper{
+  margin-left: 20px;
+}
+
+.log-small-number{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.log-medium-number{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #00BB00;
+}
+
+.log-large-number{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #0000DD;
+}
+
+.log-xlarge-number{
+  display: inline-block;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #DD0000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

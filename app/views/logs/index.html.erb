@@ -1,9 +1,26 @@
 <% @logs.each do |log| %>
   <%= log.created_at.strftime("%m/%d") %>
-  </br>
-  <%= log.number %>
+  <% if log.number < 10 %>
+    <div class="log-small-number">
+      <%= log.number %>
+    </div>
+    回
+  <% elsif log.number < 20 %>
+    <div class="log-medium-number">
+      <%= log.number %>
+    </div>
+    回
+  <% elsif log.number < 30 %>
+    <div class="log-large-number">
+      <%= log.number %>
+    </div>
+    回
+  <% else %>
+    <div class="log-xlarge-number">
+      <%= log.number %>
+    </div>
+    回
+  <% end %>
   </br>
 
 <% end %>
-
-<%= link_to "スクワットの回数を入力する", logs_path %>
