@@ -36,7 +36,6 @@ a:-webkit-any-link {
 
 .header{
   display: flex;
-  /*justify-content: space-between;*/
   align-items: center;
   background: #000055;
   height: 50px;
